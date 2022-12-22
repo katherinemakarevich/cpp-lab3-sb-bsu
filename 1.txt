@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int firstNumber, secondNumber, thirdNumber, fourthNumber;
+cout << "Enter the first number: ";
+cin >> firstNumber;
+cout << "Enter the second number: ";
+cin >> secondNumber;
+cout << "Enter the third number: ";
+cin >> thirdNumber;
+cout << "Enter the fourth number: ";
+cin >> fourthNumber;
+
+int sum = 0;
+sum += firstNumber % 5 == 0 ? firstNumber : 0;
+sum += secondNumber % 5 == 0 ? secondNumber : 0;
+sum += thirdNumber % 5 == 0 ? thirdNumber : 0;
+sum += fourthNumber % 5 == 0 ? fourthNumber : 0;
+if (sum == 0)
+{
+cout << "Error";
+} else {
+cout << "The sum of numbers, which divisible by 5: " << sum;
+}
+}
